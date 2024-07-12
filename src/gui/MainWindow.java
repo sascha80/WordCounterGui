@@ -16,6 +16,18 @@ public class MainWindow extends JFrame {
 	
 	puplic MainWindow() {
 		setTitle("Word Counter");
+		setSize(500, 400);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setLocationRelativTo(null);
+		setLayout(null);
+		
+		
+		JLabel label = new JLabel("Bitte geben Sie Ihren Text ein:");
+		label.setBounds(10, 10, 200, 25);
+		add(label);
+		
+		
+		
 		
 	}
 
