@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>290</x>
+      <y>50</y>
+      <w>280</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>
+MainWindow
+
+--
+
+ - textArea: JTextArea
+ - wordCountLabel: JLabel
+ - charCountLabel: JLabel
+ - sentenceCountLabel: JLabel
+ 
+--
+
+ + MainWindow()
+ + main(args: String[])
+ + actionPerformed(e: ActionEvent) : Void
+ + countButton: JButton
+ + fileButton: JButton
+ 
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>410</y>
+      <w>280</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>WordCounter
+--
+
+ + countWords(text: String): int
+ + countChars(text: String): int
+ + countSentences(text: String): int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>570</x>
+      <y>410</y>
+      <w>280</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>
+FileUtils
+
+--
+
+ +readFile(file: File): String
+ </panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>320</y>
+      <w>160</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>140.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>410</x>
+      <y>320</y>
+      <w>180</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;160.0;90.0</additional_attributes>
+  </element>
+</diagram>
