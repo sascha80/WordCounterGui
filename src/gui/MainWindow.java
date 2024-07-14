@@ -14,10 +14,10 @@ public class MainWindow extends JFrame {
     private JLabel sentenceCountLabel;
 
     public MainWindow() {
-        setTitle("Word Counter");
-        setSize(500, 400);
+        setTitle("Word Counter" + " by S.Hinkelmann");
+        setSize(500, 420);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLocationRelativeTo(null);  // Korrekte Methode
+        setLocationRelativeTo(null);  
         setLayout(null);
 
         JLabel label = new JLabel("Geben Sie Ihren Text ein:");
