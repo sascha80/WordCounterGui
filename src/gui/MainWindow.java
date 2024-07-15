@@ -7,18 +7,35 @@ import wordcounter.WordCounter;
 import utils.FileUtils;
 import java.io.File;
 
+/**		Die MainWindow class erstellt das Hauptfenster meiner Anwendung
+ *  	Die JTextArea ist zur Eingabe von Text. Außerdem gibt es einen Button zum zählen der Wörter Zeichen sowie Sätzen im eingegebenen Text.
+ *  	Ein weiterer Button ermöglicht das auswählen einer TXT Datei welche mit JTextArea geladen wird.
+ */
+
 public class MainWindow extends JFrame {
     private JTextArea textArea;
     private JLabel wordCountLabel;
     private JLabel charCountLabel;
     private JLabel sentenceCountLabel;
+    
+    /** Konstruktor für das Hauptfenster.
+     *  Initialisiert und konfiguriert die die GUI-Komponenten.
+     */
 
     public MainWindow() {
+    	
+    /**
+    *	setTitle setzt den Titel vom Hauptfenster, setSize setzt die größe des Hauptfensters, setDefaultCloseOperation gibt an das die Anwendung
+    *	beim schließen beendet wird. setLocationRelativeTo Zentriert das Hauptfenster in der mitte des Bildschirms. setLayout setzt das Layout
+    *	des Frames auf null damit man es manuell Positionieren kann.
+    */
         setTitle("Word Counter" + " by S.Hinkelmann");
         setSize(500, 420);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);  
         setLayout(null);
+        
+        
 
         JLabel label = new JLabel("Geben Sie Ihren Text ein:");
         label.setBounds(10, 10, 200, 25);
